@@ -1,4 +1,4 @@
-var site_url=$('#click').data('siteurl');
+var site_url='baldhanimish.me';
 
 
 //CSS Loading
