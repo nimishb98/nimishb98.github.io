@@ -17,7 +17,7 @@ imported.src = 'assets/js/bootstrap-modal.js';
 document.head.appendChild(imported);
 
 //Modal HTML Append
-var modal ='<div class="modal fade" id="myFormModel" ><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Lead Capture Form</h4></div><div class="modal-body" id="hello"><iframe  id="frameUrl" onload="setIframeHeight(this.id)" src="http://localhost/Portal/SimplyIDo/Development/p/df/f1625bb5e5a5a47185765a4165c2dced" onload="setIframeHeight(this.id)"  width="100%"  frameborder="0" ></iframe></div></div></div></div>'
+var modal ='<div class="modal fade" id="myFormModel" ><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Lead Capture Form</h4></div><div class="modal-body" id="hello"><iframe  id="frameUrl"  src="http://localhost/Portal/SimplyIDo/Development/p/df/f1625bb5e5a5a47185765a4165c2dced" onload="setIframeHeight(this.id)"  width="100%"  frameborder="0" ></iframe></div></div></div></div>'
 $('body').append(modal);
 
 //Function for modal execution
@@ -34,7 +34,7 @@ $( "#click" ).on( "click", function() {
 
  });
 //resize modal
-function getDocHeight(doc) {
+/*function getDocHeight(doc) {
     doc = doc || document;
     // stackoverflow.com/questions/1145850/
     var body = doc.body, html = doc.documentElement;
@@ -51,5 +51,5 @@ function setIframeHeight(id) {
     // IE opt. for bing/msn needs a bit added or scrollbar appears
     ifrm.style.height = getDocHeight( doc ) + 4 + "px";
     ifrm.style.visibility = 'visible';
-}
+}*/
 
