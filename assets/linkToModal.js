@@ -30,9 +30,6 @@ function popUp(link){
   var url=link;
   $('#frameUrl').attr('src', url);
 } 
-
- });
-
 //resize modal
 function getDocHeight(doc) {
     doc = doc || document;
@@ -52,3 +49,6 @@ function setIframeHeight(id) {
     ifrm.style.height = getDocHeight( doc ) + 4 + "px";
     ifrm.style.visibility = 'visible';
 }
+ });
+
+
