@@ -6,12 +6,12 @@ var site_url='baldhanimish.me';
 var link = document.createElement('link');  
 link.rel = 'stylesheet';  
 link.type = 'text/css'; 
-link.href =site_url+'assets/css/bootstrap-modal.css';  
+link.href ='assets/css/bootstrap-modal.css';  
 document.getElementsByTagName('HEAD')[0].appendChild(link);  
 
 //Modal js Loading
 var imported = document.createElement('script');
-imported.src = site_url+'assets/js/bootstrap-modal.js';
+imported.src = 'assets/js/bootstrap-modal.js';
 document.head.appendChild(imported);
 
 //Modal HTML Append
