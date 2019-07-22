@@ -31,10 +31,8 @@ $( "#click" ).on( "click", function() {
   var url=link;
   $('#frameUrl').attr('src', url);
 } */
-
- });
 //resize modal
-/*function getDocHeight(doc) {
+function getDocHeight(doc) {
     doc = doc || document;
     // stackoverflow.com/questions/1145850/
     var body = doc.body, html = doc.documentElement;
@@ -51,5 +49,7 @@ function setIframeHeight(id) {
     // IE opt. for bing/msn needs a bit added or scrollbar appears
     ifrm.style.height = getDocHeight( doc ) + 4 + "px";
     ifrm.style.visibility = 'visible';
-}*/
+}
+ });
+
 
