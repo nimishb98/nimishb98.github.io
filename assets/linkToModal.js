@@ -1,3 +1,5 @@
+jQuery(function($) {
+
 var site_url='baldhanimish.me';
 
 
@@ -48,3 +50,4 @@ function setIframeHeight(id) {
     ifrm.style.height = getDocHeight( doc ) + 4 + "px";
     ifrm.style.visibility = 'visible';
 }
+ });
