@@ -17,19 +17,19 @@ imported.src = 'assets/js/bootstrap-modal.js';
 document.head.appendChild(imported);
 
 //Modal HTML Append
-var modal ='<div class="modal fade" id="myFormModel" onload="setIframeHeight(this.id)"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Lead Capture Form</h4></div><div class="modal-body" id="hello"><iframe id="frameUrl" onload="setIframeHeight(this.id)"  width="100%"  frameborder="0" ></iframe></div></div></div></div>'
+var modal ='<div class="modal fade" id="myFormModel" onload="setIframeHeight(this.id)"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Lead Capture Form</h4></div><div class="modal-body" id="hello"><iframe id="frameUrl" src="http://localhost/Portal/SimplyIDo/Development/p/df/f1625bb5e5a5a47185765a4165c2dced" onload="setIframeHeight(this.id)"  width="100%"  frameborder="0" ></iframe></div></div></div></div>'
 $('body').append(modal);
 
 //Function for modal execution
 $( "#click" ).on( "click", function() {
- 	var link = $(this).data('link');
-  popUp(link);
+ 	//var link = $(this).data('link');
+ // popUp(link);
 });
-function popUp(link){
+/*function popUp(link){
     $('#myFormModel').modal({backdrop: 'static', keyboard: false});
   var url=link;
   $('#frameUrl').attr('src', url);
-} 
+} */
 
  });
 //resize modal
